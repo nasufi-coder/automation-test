@@ -1,0 +1,1 @@
+// This file is required by Cypress v10+ for global setup
