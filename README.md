@@ -1,23 +1,38 @@
 # Cypress Login Test Suite
 
-## ✅ Features
-- Tests login scenarios using Cypress
-- Page Object Model for better structure
-- Includes success and failure test cases
+This is a simple test suite using Cypress to validate login functionality on a demo site.
 
-## 📦 Setup
+## Why Cypress?
+
+I'm using Cypress because it's simple to set up, handles UI testing well, and makes debugging easy with real-time previews.
+
+## Test URL
+
+https://the-internet.herokuapp.com/login
+
+Credentials:
+- Check cypress.env.json
+
+## Test Cases
+
+- Successful login with valid credentials
+- Failed login with invalid username
+- Failed login with invalid password
+- Error/success message validation
+
+## Structure
+
+- `login.cy.js` – Test cases
+- `loginPage.js` – Page Object
+- `elementHelper.js` – Reusable UI actions
+- `cypress.env.json` – environment variables for credentials
+
+## Setup & Run
 
 ```bash
-npm install
-```
+npm install          # install dependencies
+npx cypress open     # run in interactive mode
+npx cypress run      # run headlessly
 
-## ▶️ Run tests
 
-```bash
-npx cypress open
-```
 
-## 🔍 Why Cypress?
-- Easy setup & fast execution
-- Great for frontend UI testing
-- Readable syntax with built-in assertions
